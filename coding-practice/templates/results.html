@@ -4,9 +4,23 @@
 
 
 <p>
-    #4) Finish the route called /results. Then, display appropriate results on 
-    this page.
+    Hi {{session['name']}}!
+
+{% if cheery %}
+    Have a wonderful day!
+
+{% elif honest %}
+    Life isn't always great.
+
+{% elif dreary %}
+    You can't always get what you want.
+
+{% endif %}
 </p>
+
+<!-- For future reference
+Alternative for checkboxes:
+<p>{{msg}}</p> -->
 
 
 {% endblock %}
